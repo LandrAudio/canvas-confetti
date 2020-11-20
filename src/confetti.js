@@ -1,4 +1,5 @@
 (function main(global, module, isWorker, workerSize) {
+  // test
   var canUseWorker = !!(
     global.Worker &&
     global.Blob &&
