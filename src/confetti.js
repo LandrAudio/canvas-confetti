@@ -329,6 +329,12 @@
         context.textAlign = "center";
         context.textBaseline = "middle";
         context.fillText('💧', fetti.x, fetti.y);
+    } else if (fetti.shape === 'money') {
+        var fontSize = fetti.scalar * 24;
+        context.font = fontSize.toString() + 'px serif';
+        context.textAlign = "center";
+        context.textBaseline = "middle";
+        context.fillText('💸', fetti.x, fetti.y);
     } else if (fetti.shape === 'circle') {
       context.ellipse ?
         context.ellipse(fetti.x, fetti.y, Math.abs(x2 - x1) * fetti.ovalScalar, Math.abs(y2 - y1) * fetti.ovalScalar, Math.PI / 10 * fetti.wobble, 0, 2 * Math.PI) :
